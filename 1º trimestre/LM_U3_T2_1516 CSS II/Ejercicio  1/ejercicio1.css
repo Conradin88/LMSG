@@ -1,0 +1,36 @@
+#primero 
+{
+    font-family: Verdana;
+	font-size: 20;
+	color:#3477bd;
+}
+
+a
+{
+    font-family: Verdana;
+	font-size: 20;
+	color:#cd3300;
+}
+
+.normal p
+{
+    font-family: Verdana;
+	font-size: 20;
+	color:#555555;
+}
+
+.normal span
+{
+    font-family: Verdana;
+	font-size: 20;
+	color:black;
+}
+
+.especial 
+{
+	background-color:#ffcc99;
+	border: solid #ff9900 1px;
+}
+
+
+

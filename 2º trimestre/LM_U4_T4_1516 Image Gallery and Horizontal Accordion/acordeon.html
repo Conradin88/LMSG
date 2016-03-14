@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acordeon Horizontal</title>
+<link rel="stylesheet" href="estilos.css">
+<script type="text/javascript" src="jquery-1.11.3.js"></script>
+</head>
+
+<body>
+<div id="container">
+  <div class="a">
+    <div id="a1" class="boton">
+      <p>Columna 1</p>
+    </div>
+    <div id="a2" class="cont"><p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mi enim, tempor non odio a, aliquet varius nunc.
+      Vestibulum et magna eu magna congue sagittis. Pellentesque convallis, magna ut blandit finibus, libero metus facilisis lacus,
+      vel pretium augue lectus ut metus. Nam iaculis vitae erat at laoreet. Morbi ultrices velit sit amet nisl mattis, quis faucibus dolor egestas.
+      Aliquam at hendrerit lorem. Suspendisse felis nibh, luctus at dictum at, vulputate vel nibh. Duis blandit posuere maximus. Proin sagittis tincidunt enim,
+      eu tempus nisi elementum vel.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mi enim, tempor non odio a, aliquet varius nunc. Vestibulum
+      et magna eu magna congue sagittis. Pellentesque convallis, magna ut blandit finibus, libero metus facilisis lacus, vel pretium augue lectus ut metus. Nam
+      iaculis vitae erat at laoreet. Morbi ultrices velit sit amet nisl mattis, quis faucibus dolor egestas. Aliquam at hendrerit lorem. Suspendisse felis nibh,
+       luctus at dictum at, vulputate vel nibh. Duis blandit posuere maximus. Proin sagittis tincidunt enim, eu tempus nisi elementum vel.
+    </p></div>
+  </div>
+  <div class="b">
+    <div id="b1" class="boton">
+      <p>Columna 2</p>
+    </div>
+    <div id="b2" class="cont"><p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mi enim, tempor non odio a, aliquet varius nunc.
+      Vestibulum et magna eu magna congue sagittis. Pellentesque convallis, magna ut blandit finibus, libero metus facilisis lacus,
+      vel pretium augue lectus ut metus. Nam iaculis vitae erat at laoreet. Morbi ultrices velit sit amet nisl mattis, quis faucibus dolor egestas.
+      Aliquam at hendrerit lorem. Suspendisse felis nibh, luctus at dictum at, vulputate vel nibh. Duis blandit posuere maximus. Proin sagittis tincidunt enim,
+      eu tempus nisi elementum vel.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mi enim, tempor non odio a, aliquet varius nunc. Vestibulum
+      et magna eu magna congue sagittis. Pellentesque convallis, magna ut blandit finibus, libero metus facilisis lacus, vel pretium augue lectus ut metus. Nam
+      iaculis vitae erat at laoreet. Morbi ultrices velit sit amet nisl mattis, quis faucibus dolor egestas. Aliquam at hendrerit lorem. Suspendisse felis nibh,
+       luctus at dictum at, vulputate vel nibh. Duis blandit posuere maximus. Proin sagittis tincidunt enim, eu tempus nisi elementum vel.
+    </p></div>
+  </div>
+  <div class="c">
+    <div id="c1" class="boton">
+      <p>Columna 3</p>
+    </div>
+    <div id="c2" class="cont"><p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mi enim, tempor non odio a, aliquet varius nunc.
+      Vestibulum et magna eu magna congue sagittis. Pellentesque convallis, magna ut blandit finibus, libero metus facilisis lacus,
+      vel pretium augue lectus ut metus. Nam iaculis vitae erat at laoreet. Morbi ultrices velit sit amet nisl mattis, quis faucibus dolor egestas.
+      Aliquam at hendrerit lorem. Suspendisse felis nibh, luctus at dictum at, vulputate vel nibh. Duis blandit posuere maximus. Proin sagittis tincidunt enim,
+      eu tempus nisi elementum vel.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mi enim, tempor non odio a, aliquet varius nunc. Vestibulum
+      et magna eu magna congue sagittis. Pellentesque convallis, magna ut blandit finibus, libero metus facilisis lacus, vel pretium augue lectus ut metus. Nam
+      iaculis vitae erat at laoreet. Morbi ultrices velit sit amet nisl mattis, quis faucibus dolor egestas. Aliquam at hendrerit lorem. Suspendisse felis nibh,
+       luctus at dictum at, vulputate vel nibh. Duis blandit posuere maximus. Proin sagittis tincidunt enim, eu tempus nisi elementum vel.
+    </p></div>
+  </div>
+  <div class="d">
+    <div id="d1" class="boton">
+      <p>Columna 4</p>
+    </div>
+    <div id="d2" class="cont">
+      <div id="carrusel">
+          <h2>Galería</h2>
+        <div id="cont_galer&iacuteia">
+          <div>
+            <button id="retroceder"><<</button>
+          </div>
+          <div>
+            <img id="imagen" src="Imagenes/1.jpg" />
+          </div>
+          <div>
+            <button id="avanzar">>></button>
+          </div>
+        </div>
+      </div>
+</div>
+
+    <script>
+  $(function() {
+    console.log("Ready for jquery");
+
+    $(".cont").hide();
+    $("#a2").show();
+    $(".boton").click(function() {
+      $(".cont").hide();
+      $(this).siblings().show();
+    });
+    $(function() {
+        x=0;
+        y=["Imagenes/1.jpg","Imagenes/2.png","Imagenes/3.jpg","Imagenes/4.gif","Imagenes/5.jpg","Imagenes/6.jpg","Imagenes/7.jpg","Imagenes/8.jpg",];
+
+
+        $("#avanzar").click(function(){
+            x=x+1
+            if (x==8){x=0};
+           $("#imagen").attr("src",y[x]);
+
+        });
+        $("#retroceder").click(function(){
+            x=x-1
+            if (x<0){x=7};
+            $("#imagen").attr("src",y[x])
+
+        });
+    });
+  });
+</script>
+</body>
+</html>

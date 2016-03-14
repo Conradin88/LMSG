@@ -1,0 +1,1 @@
+La tabla añade y borra filas pero el input de texto no soy capaz de hacerlo.

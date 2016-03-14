@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<libreta_marcadores>
+	<ul>
+		<li>
+			<nombre>Google</nombre>
+			<URL>www.google.com</URL>
+		</li>
+		<li>
+			<nombre>Facebook</nombre>
+			<URL>www.facebook.com</URL>
+		</li>
+		<li>
+			<nombre>Marca</nombre>
+			<URL>www.marca.com</URL>
+		</li>
+		<li>
+			<nombre>Ebay</nombre>
+			<URL>www.ebay.com</URL>
+		</li>
+		<li>
+			<nombre>Amazon</nombre>
+			<URL>www.amazon.com</URL>
+		</li>
+	</ul>
+</libreta_marcadores>

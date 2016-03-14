@@ -1,0 +1,112 @@
+html {
+  background: url('fondo.png') repeat-x 0 0 scroll;
+  height: 100%;
+  width: 100%;
+}
+.boton {
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+#container {
+  margin-left: 50px;
+  margin-top: 50px;
+  display: -webkit-inline-box;
+  height: 500px;
+  background-color: antiquewhite;
+  border: 3px solid #7c2020;
+  -webkit-box-shadow: 17px 14px 35px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 17px 14px 35px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 17px 14px 35px 0px rgba(0, 0, 0, 0.75);
+}
+#a1 {
+  height: 500px;
+  width: 100px;
+  background-color: #bb4b4a;
+  float: left;
+}
+#a2 {
+  width: 400px;
+  height: 500px;
+  float: left;
+}
+#b1 {
+  height: 500px;
+  width: 100px;
+  background-color: #c48f4d;
+  float: left;
+}
+#b2 {
+  width: 400px;
+  height: 500px;
+  float: left;
+}
+#c1 {
+  height: 500px;
+  width: 100px;
+  background-color: #91b657;
+  float: left;
+}
+#c2 {
+  width: 400px;
+  height: 500px;
+  float: left;
+}
+#d1 {
+  height: 500px;
+  width: 100px;
+  background-color: #5caeba;
+  float: left;
+}
+#d2 {
+  width: 400px;
+  height: 500px;
+  float: left;
+}
+.boton p {
+  font-family: sans-serif;
+  transform: rotate(-90deg);
+  font-size: 20px;
+  margin-top: 50px;
+  color: white;
+}
+h2 {
+  margin: 0px;
+  font-size: -webkit-xxx-large;
+  text-align: center;
+  margin-top: 20px;
+}
+#boton {
+  width: 400px;
+  height: 20px;
+  float: center;
+  text-align: center;
+}
+.cont {
+  background: #e3dac9;
+}
+#cont_galeria {
+  background-color: #CEC6C6;
+  width: 400px;
+  height: 350px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+button {
+  border-radius: 5px;
+}
+#retroceder {
+  float: left;
+  margin-left: 10px;
+  margin-right: 2px;
+  margin-top: 150px;
+}
+#avanzar {
+  margin-left: 2px;
+  margin-top: 150px;
+}
+img {
+  width: 80%;
+  margin-top: 15px;
+  float: left;
+}

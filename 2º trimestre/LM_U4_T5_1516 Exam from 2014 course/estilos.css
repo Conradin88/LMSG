@@ -1,0 +1,62 @@
+#title {
+  width: 1000px;
+  height: 100px;
+  margin: 0px auto;
+}
+#subtitle {
+  width: 400px;
+  height: 100px;
+  float: right;
+}
+#subtitle p {
+  width: 300px;
+  height: 20px;
+  padding: 2px 0px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  background-color: green;
+}
+#show-hide {
+  width: 150px
+}
+.container {
+  width: 800px;
+  margin: 0px auto;
+  padding: 10px;
+  height: 100px;
+}
+.subcontainer1 {
+  width: 200px;
+  height: 100px;
+  float: left;
+  border-right: 1px solid grey;
+}
+.subcontainer2 {
+  width: 500px;
+  height: 100px;
+  float: left;
+  border-left: 1px solid grey;
+}
+.boton {
+  width: 100px;
+  margin: 5px 50px;
+}
+button {
+  width: 110px;
+  margin: 5px 0px;
+}
+#barra_red {
+  background-color: red;
+}
+#barra_blue {
+  background-color: blue;
+}
+#barra_green {
+  background-color: green;
+}
+.barra {
+  width: 400px;
+  height: 100px;
+  margin: 0px 50px;
+}

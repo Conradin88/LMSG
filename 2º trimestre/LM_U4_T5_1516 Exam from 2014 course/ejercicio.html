@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Examen 2014/2015</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="jquery-1.12.0.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div id="title">
+    <div id="subtitle">
+      <p>CONTROLES GENERALES</p>
+      <button id="show-hide">OCULTAR/MOSTRAR</button>
+      <button id="reset">RESETEAR</button>
+    </div>
+  </div>
+  <div class="container" id="cont1">
+    <div class="subcontainer1">
+      <div class="boton" id="boton1">
+        <button>Mostrar/Ocultar</button>
+        <button>+50 px</button>
+        <button>-50 px</button>
+      </div>
+    </div>
+    <div class="subcontainer2">
+      <div class="barra" id="barra_red"></div>
+    </div>
+  </div>
+  <div class="container" id="cont1">
+    <div class="subcontainer1">
+      <div class="boton" id="boton2">
+        <button>Mostrar/Ocultar</button>
+        <button>+50 px</button>
+        <button>-50 px</button>
+      </div>
+    </div>
+    <div class="subcontainer2">
+      <div class="barra" id="barra_blue"></div>
+    </div>
+  </div>
+  <div class="container" id="cont1">
+    <div class="subcontainer1">
+      <div class="boton" id="boton3">
+        <button>Mostrar/Ocultar</button>
+        <button>+50 px</button>
+        <button>-50 px</button>
+      </div>
+    </div>
+    <div class="subcontainer2">
+      <div class="barra" id="barra_green"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(function() {
+      console.log("Ready for jQuery");
+      $("#show-hide").click(function() {
+        var n = $(".barra").width();
+        if (n == 0) {
+          $(".barra").animate({
+            width: "400px"
+          });
+        } else if (n > 0) {
+          $(".barra").animate({
+            width: "0px"
+          });
+        }
+      });
+
+      $("#reset").click(function() {
+        $(".barra").width(400);
+      });
+
+      $(".boton button:first-of-type").click(function() {
+        var n = $(this).parents(".subcontainer1").next().children().width();
+        if (n > 0) {
+          $(this).parents(".subcontainer1").next().children().animate({
+            width: "0px"
+          });
+
+        } else if (n == 0) {
+          $(this).parents(".subcontainer1").next().children().animate({
+            width: "400px"
+          });
+        }
+      });
+
+      $(".boton button:nth-child(2)").click(function() {
+        $(this).parents(".subcontainer1").next().children().css({
+          width: "+=50"
+        });
+      });
+
+      $(".boton button:nth-child(3)").click(function() {
+        $(this).parents(".subcontainer1").next().children().css({
+          width: "-=50"
+        });
+      });
+
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla modificable</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="jquery-1.11.3.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="main">
+    <div id="tabla">
+            <h2 align="center">TABLA</h2>
+        <table border="1" align="center" id="mitabla">
+            <tr>
+                <td>Text</td>
+                <td>Text</td>
+                <td>Text</td>
+                <td>Text</td>
+                <td>Text</td>
+            </tr>
+            <tr>
+                <td>Text</td>
+                <td>Text</td>
+                <td>Text</td>
+                <td>Text</td>
+                <td>Text</td>
+            </tr>
+            <tr>
+                <td>Text</td>
+                <td>Text</td>
+                <td>Text</td>
+                <td>Text</td>
+                <td>Text</td>
+            </tr>
+            <tr>
+                <td>Text</td>
+                <td>Text</td>
+                <td>Text</td>
+                <td>Text</td>
+                <td>Text</td>
+            </tr>
+            <tr>
+                <td>Text</td>
+                <td>Text</td>
+                <td>Text</td>
+                <td>Text</td>
+                <td>Text</td>
+            </tr>
+        </table>
+    <div id="inferior">
+        <input type="text"  name="entrada" size="20" id="input">
+        <input type="button" id="rellenar" value="Rellenar tabla">
+        <input type="button" onclick="addfila()" id="add" value="Insertar fila">
+        <input type="button" onclick="rmfila()" id="remove" value="Borrar fila">
+    </div>        
+    </div>
+    </div>
+    <script>
+    /*$(function() {
+                $("input[value=A&ntilde;adir fila]").click(function(){
+                    $("table").append("<tr><td>Text</td><td>Text</td><td>Text</td><td>Text</td><td>Text</td></tr>");
+                });
+                $("input[value=Borrar fila]").click(function(){
+                    $("table").prepend("<tr><td>Text</td><td>Text</td><td>Text</td><td>Text</td><td>Text</td></tr>");
+                });
+            }); */
+        function addfila()
+        {
+            document.getElementById("mitabla").insertRow(-1).innerHTML = '<td>Text</td><td>Text</td><td>Text</td><td>Text</td><td>Text</td>'
+        };
+        function rmfila()
+        {
+            document.getElementById("mitabla").deleteRow(-1) = '<td>Text</td><td>Text</td><td>Text</td><td>Text</td><td>Text</td>'
+        };
+    </script>
+</body>
+</html>

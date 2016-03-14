@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu desplegabale</title>
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <script src="jquery-1.11.3.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="contenido">	   	   
+        <ul class="submenu1">
+        	<li><a href="#">Boton 1</a>
+        		<ul class="submenu2">
+                    <li><a href="#">Boton</a></li>
+                    <li><a href="#">Boton</a></li>
+                    <li><a href="#">Boton</a></li>
+                    <li><a href="#">Boton</a></li>
+                    <li><a href="#">Boton</a></li>
+                    <li><a href="#">Boton desplegable</a>
+        				<ul>
+        					<li><a href="#">Desplegado 1</a></li>
+        					<li><a href="#">Desplegado 2</a></li>
+                            <li><a href="#">Desplegado 3</a></li>
+                            <li><a href="#">Desplegado 4</a></li>
+                            <li><a href="#">Desplegado 5</a></li>
+                            <li><a href="#">Desplegado 6</a></li>
+        				</ul>
+        			 </li>
+        		</ul>
+            </li>
+            <li><a href="#">Boton 2</a></li>
+            <li><a href="#">Boton 3</a></li>
+            <li><a href="#">Boton 4</a></li>
+            <li><a href="#">Boton 5</a></li>
+            <li><a href="#">Boton 6</a></li>
+        </ul>
+	</div>
+    
+    <script>
+    $(function(){
+
+    $("ul.submenu1 li").hover(function(){
+    
+        $(this).addClass("hover");
+        $('ul:first',this).css('visibility', 'visible');
+    
+    }, function(){
+    
+        $(this).removeClass("hover");
+        $('ul:first',this).css('visibility', 'hidden');
+    
+    });
+});
+    </script> 
+</body>
+</html>

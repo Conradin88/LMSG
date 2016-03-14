@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<agenda>
+	<persona1>
+		<dni></dni>
+		<nombre></nombre>
+	</persona1>
+	<persona2>
+		<dni></dni>
+		<nombre></nombre>
+	</persona2>
+	<persona3>
+		<dni></dni>
+		<nombre></nombre>
+	</persona3>
+	<persona4>
+		<dni></dni>
+		<nombre></nombre>
+	</persona4>
+	<persona5>
+		<dni></dni>
+		<nombre></nombre>
+	</persona5>
+	<persona6>
+		<dni></dni>
+		<nombre></nombre>
+	</persona6>
+</agenda>

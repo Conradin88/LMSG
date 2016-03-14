@@ -1,0 +1,23 @@
+#container{
+    background-color: #d0d2ed;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    border: 1px dashed red;
+    position: fixed;
+}
+
+#general{
+    float: left;
+}
+#general img{
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+}
+
+.size img{
+    width: 70px;
+    height: 70px;
+    margin-left: 40px;
+}

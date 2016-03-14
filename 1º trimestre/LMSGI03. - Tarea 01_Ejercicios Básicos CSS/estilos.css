@@ -1,0 +1,51 @@
+/* This is a comment */
+/* Style Sheet for Jaberwocky Tutorial */
+
+/* Body */
+body {
+    background-color: aqua;
+    background-position: right;
+    background: url(jabber1.gif);
+    vertical-align: baseline;
+}
+
+/* Headers */
+h1 {
+    color:maroon; 
+    font-size:20pt; 
+    padding: 10px 10px 10px 10px;
+    background-color: white; 
+    border-style: groove double; 
+    border-color: blue; 
+    border-width: 10px; 
+    text-align: center; 
+    margin-left: 500px; 
+    background: url(backtile.gif)
+}
+h2 {color:bisque}
+
+/* HR (Hard Rule = line) */
+hr {
+    height: 10px;
+    color:navy
+}
+
+/* Paragraphs */
+p {font-size:12pt; margin-left: 15px}
+p.verse {color:maroon; margin-left: 60px}
+p.comment {color: aliceblue; margin-left: 40px}
+/* Divs */
+div.reference {color:slategray; margin-left: 40px;}
+/* Links */
+a:link     {color:red}
+a:visited  {color:red}
+a:hover    {color:black}
+a:active   {color:blue}
+
+/* Navigation */
+
+/* Classes used by all html elements */
+
+/* Ids */
+
+
