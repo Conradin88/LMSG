@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<horario_de_vuelos>
+	<ol>
+		<li>Compañia</li>
+			<ol>
+				<li>Ryaner</li>
+				<li>Viajes pepe</li>
+				<li>Viajes manolo</li>
+				<li>Viajes el viajante</li>
+				<li>Viajes mercadona</li>
+			</ol>
+		<li>Número de vuelo</li>
+			<ol>
+				<li>Boeing-747</li>
+				<li>Boeing-748</li>
+				<li>Boeing-749</li>
+				<li>Boeing-750</li>
+				<li>Boeing-751</li>
+			</ol>
+		<li>Origen</li>
+			<ol>
+				<li>Sevilla</li>
+				<li>Huelva</li>
+				<li>Cadiz</li>
+				<li>Valencia</li>
+				<li>Madrid</li>
+			</ol>
+		<li>destino</li>
+			<ol>
+				<li>Madrid</li>
+				<li>Segovia</li>
+				<li>Badajoz</li>
+				<li>Granada</li>
+				<li>Almeria</li>
+			</ol>
+		<li>ruta</li>
+			<ol>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ol>
+		<li>hora de salida</li>
+			<ol>
+				<li>10:00</li>
+				<li>11:00</li>
+				<li>12:00/li>
+				<li>1300</li>
+				<li>14:00</li>
+			</ol>
+		<li>llegada</li>
+			<ol>
+				<li>15:00</li>
+				<li>16:00</li>
+				<li>17:00</li>
+				<li>18:00</li>
+				<li>19:00</li>
+			</ol>
+	</ol>
+</horario_de_vuelos>
